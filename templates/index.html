@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <title>GROUP PROJECT</title>
+
+  <link rel="stylesheet" media="all"
+    href="https://cdnjs.cloudflare.com/ajax/libs/authy-form-helpers/2.3/form.authy.min.css"
+    data-turbolinks-track="reload" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/authy-form-helpers/2.3/form.authy.min.js"
+    data-turbolinks-track="reload"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css5/bootstrap.min.css') }}">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      text-align: center;
+    }
+  </style>
+
+<style>
+  .bordered {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+</style>
+</head>
+
+
+
+
+
+<body>
+  <!-- <h1>{{message}}</h1> -->
+  <div>
+    <img src="../static/LoGO.jpg" height="500px" width="500px">
+    
+  </div>
+
+  <br />
+  <h1> IT SECURITY</h1>
+  <h1>Decentralized networking for information security !</h1>
+  <br /></h3>
+  <br />
+
+    <!-- "https://www.braintreegateway.com/merchants/YOUR_MERCHANT_ID/verified" -->
+    
+  <!-- <a href="https://sandbox.braintreegateway.com/merchants/htvcxmv6t6c5bgqx/verified" target="_blank">
+    <img src="https://s3.amazonaws.com/braintree-badges/braintree-badge-wide-dark.png" width="280px" height ="44px" border="0"/>
+    </a></div> -->
+  <br />
+
+
+    {% block content %}
+    <div class="container content-section col-md-4">
+      {% for message in get_flashed_messages() %}
+      <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% block page_content %}{% endblock %}
+  <div class="card">
+    <div class="card-body">
+
+      <ul class="nav navbar-nav">
+        <div>
+          <form action="/complete" accept-charset="UTF-8" method="post">
+
+            <li><input type="text" name="Enter Access Key" id="Enter Access Key" placeholder="Enter Access Key"
+                required /></li><br />
+
+            <div><button type="submit" class="btn btn-dark btn-block btn-large">
+                <h7>Enter Access Key to Gain Access to Network</h7><img src="" height="100px"
+                  width="100px">
+              </button><br />
+
+      </ul>
+    </div>
+
+    </form>
+
+  </div>
+  {% endblock %}
+  </div>
+  </div>
+
+
+  {{inactive}}
+
+
+  </h1>
+  </div>
+</body>
+
+<body>
+</body>
+<!-- <footer> -->
+
+<!-- </footer> -->
+
+
+<br /><br />
+<!-- {{valid}}
+    <br />
+    {{chain_replaced}} -->
+</p>
+<footer>
+
+  <br /><br /><br /><br /><br /><br /><br /><br />
+
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Welcome To our Group project</h5>
+      <img src="/static/LoGO.jpg" height="50px" width="50px">
+      
+    </div>
+  </div>
+
+
+
+  <div>
+
+</footer>
+<br /><br /><br />
+{{fullChain}}
+
+</html>

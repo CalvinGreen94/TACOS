@@ -1,0 +1,14 @@
+
+flask
+numpy
+gunicorn
+requests
+flask_bootstrap
+asyncio
+flask_cors
+pandas
+flask_sslify
+Flask-SSLify
+uuid
+faunadb
+

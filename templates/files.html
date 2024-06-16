@@ -1,0 +1,197 @@
+<html>
+
+<head>
+  <title>Froup Project</title>
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <link rel="stylesheet" media="all"
+    href="https://cdnjs.cloudflare.com/ajax/libs/authy-form-helpers/2.3/form.authy.min.css"
+    data-turbolinks-track="reload" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/authy-form-helpers/2.3/form.authy.min.js"
+    data-turbolinks-track="reload"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css5/bootstrap.min.css') }}">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    #ip1 {
+    border-radius: 18px;
+    background: #600;
+    padding: 20px; 
+    width: 200px;
+    height: 15px;    
+}
+
+#ip2 {
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px;    
+    /* background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%) */
+}
+
+#ip3 {
+    border-radius: 15px 50px 30px 5px;
+    background: #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+}
+
+#ip4 {
+    border-radius: 15px 50px 30px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+}
+
+#ip5 {
+    border-radius: 15px 50px;
+    background: #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+} 
+
+#ip6 {
+    border-radius: 50%;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px;
+} 
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <img src="../static/LoGO.jpg" height="500px" width="500px">
+  </div>
+
+
+
+  <form action="/create_document" accept-charset="UTF-8" method="post">
+    <div class="card">
+        <div class="card-body">
+          <h1>Enter Information</h1>
+          <br /> <br />
+          <input type="text" id="ip2" name="Enter Name of the file"
+            id="Enter Name of the file"
+            placeholder="Enter Name of the file" />
+            <br />
+            <input type="text" id="ip2" name="Enter Description"
+            id="Enter Description"
+            placeholder="Enter Description" />
+        </div>
+      <div>
+        <button type="submit" class="btn btn-dark btn-block btn-large">
+          <h7>click to submit document</h7><img src="" height="100px"
+            width="100px">
+        </button>
+      </div>
+
+      </form>
+
+    <div>
+    <h1>
+     Output: <br /></h1>
+
+
+  </div>
+  <p>
+
+
+      <div>
+    <font color="#FF33CC"> <h3>{{ result }} <br />{{description}}</h3> </font>
+  </p>
+
+  </div>
+  </div>
+  <!-- </container> -->
+  <br /><br />
+
+
+  <br /><br />
+  {{node_address}}
+ 
+  <div class="card">
+    <div class="card-body">
+
+      <p>
+      
+      <p>
+
+
+        <!-- <container> -->
+    </div>
+<br /><br /><br />
+<h1>
+
+<br /><br />
+  </div>
+  </div>
+  </div>
+  </div>
+  </h1>
+  </div>
+</body>
+
+<body>
+  <!-- <font color="#FF33CC"> {{ answers }} </font> -->
+  </h1>
+</body>
+<br /><br /><br />
+</p>
+<!-- <footer>
+          <button class="btn btn-dark btn-block btn-large"><a href="/image_bot"><font color="#ffffff">Generate Media/Content</font></a></button>
+    </footer> -->
+<br /><br /><br />
+<h1>
+  <font color="#6699CC">Blockchain Information Hash Information:</font>
+</h1>
+<p>{{valid}}</p>
+<br />
+<p>{{chain_replaced}}</p>
+<br /><br />
+{{message}}
+<br /><br />
+{{valid}}
+    <br />
+    {{chain_replaced}}
+<!-- <a href="https://tronscan.org/#/transaction/{{hash}}">{{hash}}</a> -->
+<!-- {{ctext}} -->
+<br /><br />
+<!-- {{fullChain}} -->
+
+<footer>
+
+  <br /><br /><br /><br /><br /><br /><br /><br />
+
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Welcome To our Group project</h5>
+      <img src="/static/LoGO.jpg" height="50px" width="50px">
+      
+    </div>
+  </div>
+
+  <!-- <div> -->
+
+</footer>
+
+</html>
