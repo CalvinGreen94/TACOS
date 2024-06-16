@@ -5,65 +5,18 @@ import hashlib
 import json
 from urllib.parse import urlparse
 from flask_cors import CORS
-
 import requests
-# from urllib.request import urlopen
-# from bs4 import BeautifulSoup as soup
-# import random
 import asyncio
-# from twilio.base.exceptions import TwilioRestException
-# from authy.api import AuthyApiClient
 from flask_bootstrap import Bootstrap
-import openai
 from flask_sslify import SSLify
-# import shutil
-# from twilio.rest import Client
-# from clint.textui import progress
-# from ecapture import ecapture as ec
-# from espeakng import ESpeakNG
-# import wave
-# import json
-# import pyaudio
-# import StringIO
 import os
-# from os.path import join, dirname
-# from dotenv import load_dotenv
-
-# dotenv_path = '.env'
-# load_dotenv(dotenv_path)
-
 import pandas as pd
 import numpy as np
 import datetime as dt
-# import cbpro
-# import matplotlib.pyplot as plt 
 import time
-# from web3.middleware import geth_poa_middleware
-# from web3.gas_strategies.time_based import medium_gas_price_strategy
-# # from eth_account.messages import encode_defunct
-
-# from web3 import Web3
-import json
-# import librosa
-
-
-# from web3 import Web3
-# from web3 import middleware
-# from web3.middleware import geth_poa_middleware
-# from web3.auto import w3
-# infura_url = "https://mainnet.infura.io/v3/5c9cb0b35a2742659dec6fc7680c16c4"
-# web3 = Web3(Web3.HTTPProvider(infura_url))
-# web3.middleware_onion.inject(geth_poa_middleware, layer=0)
-
-
-# from coinbase.wallet.client import Client
 import json
 import pandas as pd 
-# Before implementation, set environmental variables with the names API_KEY and API_SECRET
-# from web3.auto import w3
 from uuid import *
-# client = Tron()
-import braintree
 
 from werkzeug.security import generate_password_hash, check_password_hash
 from faunadb import query as q
@@ -71,13 +24,6 @@ from faunadb.client import FaunaClient
 from faunadb.objects import Ref
 from faunadb.errors import BadRequest, NotFound
 
-config = braintree.Configuration.configure(environment=braintree.Environment.Sandbox,
-        merchant_id="htvcxmv6t6c5bgqx",
-        public_key="c7nbxy7xmq7yzfbr",
-        private_key="d5171358f23837192146d0fe5ba97234"
-)
-
-gateway = braintree.BraintreeGateway(config)
 client = FaunaClient(secret="fnAFkArqyrAAQu0GXt_7xIFbDtgvcaCQcB28JxX-",domain="db.us.fauna.com")
 
 class CIA_NETn:
