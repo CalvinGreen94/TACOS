@@ -24,7 +24,7 @@ from faunadb.client import FaunaClient
 from faunadb.objects import Ref
 from faunadb.errors import BadRequest, NotFound
 
-client = FaunaClient(secret="fnAFkArqyrAAQu0GXt_7xIFbDtgvcaCQcB28JxX-",domain="db.us.fauna.com")
+client = FaunaClient(secret=os.getenv("API_KEY"),domain="db.us.fauna.com")
 
 class CIA_NETn:
 
